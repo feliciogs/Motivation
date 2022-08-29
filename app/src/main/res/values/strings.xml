@@ -5,4 +5,5 @@
     <string name="whats_our_name">Qual o seu nome?</string>
     <string name="save">Salvar</string>
     <string name="validation_name_user">Preencha o campo por favor!</string>
+    <string name="hello">Olá, </string>
 </resources>

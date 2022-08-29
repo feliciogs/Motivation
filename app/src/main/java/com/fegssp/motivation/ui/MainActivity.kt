@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun handleUserName() {
         binding.txtUserId.text =
-            "Olá, ${SecurityPreferences(this).getString(MotivationConstants.KEY.USER_NAME)}!"
+            "${this.getString(R.string.hello)}, ${SecurityPreferences(this).getString(MotivationConstants.KEY.USER_NAME)}!"
     }
 
     private fun handleFilter(id: Int) {
