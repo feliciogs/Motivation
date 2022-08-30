@@ -11,6 +11,7 @@ import com.fegssp.motivation.R
 import com.fegssp.motivation.data.Mock
 import com.fegssp.motivation.infra.SecurityPreferences
 import com.fegssp.motivation.databinding.ActivityMainBinding
+import java.util.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
     lateinit var binding: ActivityMainBinding
@@ -86,6 +87,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun setNewPhrase(){
-        binding.txtMsgMotivation.text = Mock().getPhrase(category)
+        binding.txtMsgMotivation.text = Mock().getPhrase(category, Locale.getDefault().language)
     }
 }
