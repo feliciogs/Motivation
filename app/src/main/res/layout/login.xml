@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <TextView
+        android:id="@+id/txt_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="50dp"
+        android:textSize="25sp"
+        android:background="#855e53"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cappuccino"/>
+
+
+    <ImageView
+        android:id="@+id/ic_timer"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="sp"
+        app:layout_constraintEnd_toStartOf="@+id/ic_favorite"
+        android:layout_marginTop="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_time"/>
+    <ImageView
+        android:id="@+id/ic_favorite"
+        app:layout_constraintStart_toEndOf="@+id/ic_timer"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_baseline_favorite_24"/>
+    <TextView
+        android:id="@+id/txt_timer"
+        app:layout_constraintTop_toBottomOf="@+id/ic_timer"
+        app:layout_constraintStart_toStartOf="@id/ic_timer"
+        app:layout_constraintEnd_toEndOf="@+id/ic_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 minutos"/>
+    <TextView
+        android:id="@+id/txt_favorite"
+        app:layout_constraintStart_toStartOf="@+id/ic_favorite"
+        app:layout_constraintTop_toBottomOf="@+id/ic_favorite"
+        app:layout_constraintEnd_toEndOf="@id/ic_favorite"
+        android:layout_width="wrap_content"
+        android:text="54214"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/view_bar"
+        app:layout_constraintTop_toBottomOf="@+id/txt_timer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_width="400dp"
+        android:layout_height="1dp"
+        android:background="#855e53"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
